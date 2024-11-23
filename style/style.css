@@ -81,7 +81,7 @@ a {
     margin-left: 20px; }
   .main_header nav ul {
     display: flex;
-    gap: 12px; }
+    gap: 45px; }
     .main_header nav ul li {
       font-family: "Jost", sans-serif;
       font-weight: 400;
@@ -95,7 +95,7 @@ a {
 
 .banner .container {
   content: "";
-  height: 100vh;
+  height: 641px;
   background-image: url("../images/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -137,6 +137,6 @@ a {
       padding: 13px 25px; }
   .banner .container img {
     position: relative;
-    top: 650px; }
+    top: 535px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -100,7 +100,7 @@ a {
   nav {
     ul{
     display: flex;
-      gap: 12px;
+      gap: 45px;
       li{
         font-family: $font_family;
         font-weight: 400;
@@ -120,7 +120,7 @@ a {
 .banner{
   .container{
     content: "";
-    height: 100vh;
+    height: 641px;
     background-image: url("../images/banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -168,7 +168,7 @@ a {
     }
     img{
       position: relative;
-      top: 650px;
+      top: 535px;
     }
   }
 }
