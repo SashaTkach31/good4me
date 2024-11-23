@@ -1,3 +1,4 @@
+/*!*__________________________*!@mixin___________________________________*/
 * {
   padding: 0;
   margin: 0;
@@ -10,6 +11,18 @@ a {
   max-width: 1200px;
   margin: auto; }
 
+.orange_button, .banner .container .article_banner .shop_now {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: #f6623e;
+  padding: 13px 25px; }
+
+/*______________________________________header___________________________________*/
 .pre_header {
   background-color: #f6623e;
   display: flex;
@@ -81,7 +94,7 @@ a {
     margin-left: 20px; }
   .main_header nav ul {
     display: flex;
-    gap: 45px; }
+    gap: 30px; }
     .main_header nav ul li {
       font-family: "Jost", sans-serif;
       font-weight: 400;
@@ -93,13 +106,15 @@ a {
   .main_header .source {
     margin-right: 20px; }
 
+/*_______________________________banner_________________________________________*/
 .banner .container {
   content: "";
   height: 641px;
   background-image: url("../images/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  margin-bottom: 60px; }
   .banner .container .article_banner {
     position: absolute;
     max-width: 450px;
@@ -126,17 +141,154 @@ a {
       color: #454545;
       margin-bottom: 35px; }
     .banner .container .article_banner .shop_now {
+      animation: pulse_shop_now infinite 1s; }
+      .banner .container .article_banner .shop_now:hover {
+        font-weight: bolder; }
+  .banner .container img {
+    position: relative;
+    top: 580px;
+    max-width: 100%; }
+
+@keyframes pulse_shop_now {
+  0% {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3); }
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); } }
+/*________________________________deal__________________________________________*/
+.deal .container {
+  text-align: center; }
+  .deal .container h3 {
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 89%;
+    color: #000000;
+    margin-bottom: 20px; }
+  .deal .container .orange_band {
+    width: 127px;
+    height: 4px;
+    background: #f6623e;
+    margin-left: 530px;
+    margin-bottom: 25px; }
+  .deal .container p {
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 133%;
+    text-align: center;
+    color: #454545;
+    margin-bottom: 36px; }
+  .deal .container .deal_BAD {
+    margin-bottom: 120px; }
+    .deal .container .deal_BAD ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-around; }
+      .deal .container .deal_BAD ul li {
+        max-width: 400px; }
+        .deal .container .deal_BAD ul li img {
+          margin-bottom: 22px; }
+        .deal .container .deal_BAD ul li a {
+          font-family: "Jost", sans-serif;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 133%;
+          color: #000000;
+          text-decoration: none; }
+          .deal .container .deal_BAD ul li a:hover {
+            color: #f6623e; }
+  .deal .container .payment {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 100px; }
+    .deal .container .payment article {
+      max-width: 170px; }
+      .deal .container .payment article img {
+        margin-bottom: 22px; }
+      .deal .container .payment article h4 {
+        margin-bottom: 11px;
+        font-family: "Jost", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 133%;
+        color: #000000; }
+      .deal .container .payment article p {
+        font-family: "Jost", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 125%;
+        text-align: center;
+        color: #454545; }
+
+/*______________________________health__________________________________________*/
+.health .container {
+  background: #fff8f6;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 136px; }
+  .health .container article {
+    text-align: left;
+    max-width: 250px;
+    padding-left: 10px; }
+    .health .container article h2 {
+      font-family: "Jost", sans-serif;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 144%;
+      letter-spacing: 0.06em;
+      color: #000000;
+      margin-bottom: 35px; }
+    .health .container article p {
       font-family: "Jost", sans-serif;
       font-weight: 500;
       font-size: 16px;
-      line-height: 125%;
-      text-transform: uppercase;
-      color: #FFFFFF;
+      line-height: 175%;
+      color: #454545;
+      margin-bottom: 34px; }
+    .health .container article a {
+      border: 2px solid #f6623e;
+      font-family: "Jost", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 156%;
+      text-align: center;
+      color: #000000;
       text-decoration: none;
-      background-color: #f6623e;
-      padding: 13px 25px; }
-  .banner .container img {
-    position: relative;
-    top: 535px; }
+      padding: 10px 31px 7px 34px;
+      transition: background-color 0.6s ease, color 0.4s ease; }
+      .health .container article a:hover {
+        background-color: #f6623e;
+        color: #FFFFFF; }
+  .health .container .two_images {
+    max-width: 440px; }
+    .health .container .two_images img:first-of-type {
+      margin-bottom: 30px; }
+  .health .container .one_images {
+    max-width: 470px; }
+    .health .container .one_images img {
+      width: 100%; }
+
+/*
+!*_____________________________*!@product__________________________________________*/
+.product .container {
+  text-align: center; }
+  .product .container h3 {
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 89%;
+    color: #000000;
+    margin-bottom: 58px; }
+  .product .container .product_article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
 
 /*# sourceMappingURL=style.css.map */
