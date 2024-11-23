@@ -22,14 +22,15 @@ a {
   background-color: $primary_color;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 25px;
   .p_pre_header {
     font-family: $font_family;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 125%;
     color: $light_color;
     padding-top: 15px;
-    padding-left: 120px;
+    padding-left: 30px;
     padding-bottom: 15px;
   }
   div {
@@ -38,13 +39,14 @@ a {
     a {
       font-family: $font_family;
       font-weight: 400;
-      font-size: 16px;
+      font-size: 14px;
       line-height: 125%;
       color: $light_color;
       text-decoration: none;
       padding-left: 6px;
-      /*&:last-child {
-        position: relative;
+      }
+      .register{
+        padding-right: 10px;
         &:after {
           border: 1px solid var(--ffffff);
           width: 27px;
@@ -54,45 +56,119 @@ a {
           opacity: 0.3;
           padding-left: 20px;
         }
-      }*/
+      }
       &:hover {
         font-weight: bolder;
       }
-    }
     .value {
-      padding-right: 123px;
+      align-items: center;
+      display: flex;
+      padding-right: 35px;
+      padding-bottom: 15px;
       font-family: $font_family;
       font-weight: 400;
-      font-size: 16px;
+      font-size: 14px;
       line-height: 125%;
       color: $light_color;
-        &:before {
-          display: inline-block;
-          content: "";
-          width: 24px;
-          height: 16px;
-          background-image: url("images/USD.svg");
-        }
-        &:after {
-          content: "";
-          background-image: url("images/arrow.svg");
-        }
+      &:before {
+        display: inline-block;
+        content: "";
+        width: 24px;
+        height: 16px;
+        background-image: url("../images/USD.svg");
+        margin-left: 30px;
+        margin-right: 5px;
+      }
+      &:after {
+        display: inline-block;
+        content: "";
+        width: 8px;
+        height: 4px;
+        margin-left: 5px;
+        background-image: url("../images/arrow.svg");
+      }
     }
   }
 }
 .main_header{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   .logo{
-    padding-top: 28px;
-    padding-left: 109px;
-    padding-bottom: 29px;
+    margin-left: 20px;
   }
   nav {
     ul{
-    display: inline-block;
+    display: flex;
+      gap: 12px;
+      li{
+        font-family: $font_family;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 133%;
+        color: $secondary_color;
+        &:hover{
+          color: $primary_color;
+        }
+      }
     }
-
+  }
+  .source{
+    margin-right: 20px;
   }
 }
+.banner{
+  .container{
+    content: "";
+    height: 100vh;
+    background-image: url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 
+    .article_banner{
+      position: absolute;
+      max-width: 450px;
+      left: 650px;
+      top: 160px;
+      h4{
+        font-family: $font_family;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 162%;
+        color: $primary_color;
+      }
+      h1{
+        font-family: $font_family;
+        font-weight: 600;
+        font-size: 45px;
+        line-height: 129%;
+        color: #000000;
+        margin-bottom: 15px;
+      }
+      p{
+        font-family: $font_family;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 181%;
+        color: $secondary_color;
+        margin-bottom: 35px;
+      }
+      .shop_now{
+        font-family: $font_family;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 125%;
+        text-transform: uppercase;
+        color: $light_color;
+        text-decoration: none;
+        background-color: $primary_color;
+        padding: 13px 25px;
+      }
+    }
+    img{
+      position: relative;
+      top: 650px;
+    }
+  }
+}

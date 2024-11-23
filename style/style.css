@@ -13,15 +13,16 @@ a {
 .pre_header {
   background-color: #f6623e;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-bottom: 25px; }
   .pre_header .p_pre_header {
     font-family: "Jost", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 125%;
     color: #FFFFFF;
     padding-top: 15px;
-    padding-left: 120px;
+    padding-left: 30px;
     padding-bottom: 15px; }
   .pre_header div {
     display: flex;
@@ -29,30 +30,31 @@ a {
     .pre_header div a {
       font-family: "Jost", sans-serif;
       font-weight: 400;
-      font-size: 16px;
+      font-size: 14px;
       line-height: 125%;
       color: #FFFFFF;
       text-decoration: none;
-      padding-left: 6px;
-      /*&:last-child {
-        position: relative;
-        &:after {
-          border: 1px solid var(--ffffff);
-          width: 27px;
-          height: 0;
-          position: absolute;
-          transform: rotate(-90deg);
-          opacity: 0.3;
-          padding-left: 20px;
-        }
-      }*/ }
-      .pre_header div a:hover {
-        font-weight: bolder; }
+      padding-left: 6px; }
+    .pre_header div .register {
+      padding-right: 10px; }
+      .pre_header div .register:after {
+        border: 1px solid var(--ffffff);
+        width: 27px;
+        height: 0;
+        position: absolute;
+        transform: rotate(-90deg);
+        opacity: 0.3;
+        padding-left: 20px; }
+    .pre_header div:hover {
+      font-weight: bolder; }
     .pre_header div .value {
-      padding-right: 123px;
+      align-items: center;
+      display: flex;
+      padding-right: 35px;
+      padding-bottom: 15px;
       font-family: "Jost", sans-serif;
       font-weight: 400;
-      font-size: 16px;
+      font-size: 14px;
       line-height: 125%;
       color: #FFFFFF; }
       .pre_header div .value:before {
@@ -60,19 +62,81 @@ a {
         content: "";
         width: 24px;
         height: 16px;
-        background-image: url("images/USD.svg"); }
+        background-image: url("../images/USD.svg");
+        margin-left: 30px;
+        margin-right: 5px; }
       .pre_header div .value:after {
+        display: inline-block;
         content: "";
-        background-image: url("images/arrow.svg"); }
+        width: 8px;
+        height: 4px;
+        margin-left: 5px;
+        background-image: url("../images/arrow.svg"); }
 
 .main_header {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
   .main_header .logo {
-    padding-top: 28px;
-    padding-left: 109px;
-    padding-bottom: 29px; }
+    margin-left: 20px; }
   .main_header nav ul {
-    display: inline-block; }
+    display: flex;
+    gap: 12px; }
+    .main_header nav ul li {
+      font-family: "Jost", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 133%;
+      color: #454545; }
+      .main_header nav ul li:hover {
+        color: #f6623e; }
+  .main_header .source {
+    margin-right: 20px; }
+
+.banner .container {
+  content: "";
+  height: 100vh;
+  background-image: url("../images/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+  .banner .container .article_banner {
+    position: absolute;
+    max-width: 450px;
+    left: 650px;
+    top: 160px; }
+    .banner .container .article_banner h4 {
+      font-family: "Jost", sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 162%;
+      color: #f6623e; }
+    .banner .container .article_banner h1 {
+      font-family: "Jost", sans-serif;
+      font-weight: 600;
+      font-size: 45px;
+      line-height: 129%;
+      color: #000000;
+      margin-bottom: 15px; }
+    .banner .container .article_banner p {
+      font-family: "Jost", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 181%;
+      color: #454545;
+      margin-bottom: 35px; }
+    .banner .container .article_banner .shop_now {
+      font-family: "Jost", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 125%;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      text-decoration: none;
+      background-color: #f6623e;
+      padding: 13px 25px; }
+  .banner .container img {
+    position: relative;
+    top: 650px; }
 
 /*# sourceMappingURL=style.css.map */
