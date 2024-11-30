@@ -11,151 +11,301 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/mobile_menu.css">
+
 </head>
 <body>
-    <header>
-        <div class="container">
-            <article class="pre_header">
-                <p class="p_pre_header">
-                    Afterpay, Laybuy & Genoapay | Free Delivery New Zealand + Australia*
-                </p>
-                <div>
-                    <a href="#">Sign In /</a>
-                    <a class="register" href="#">Register</a>
-                    <p class="value">USD</p>
-                </div>
-            </article>
-            <article class="main_header">
-                <a class="logo" href="#">
-                    <img src="images/Logo.svg" alt="logo" loading="lazy">
-                </a>
-                <nav>
-                    <ul>
-                        <li>HOME</li>
-                        <li>SHOP</li>
-                        <li>FAQ'S</li>
-                        <li>STOCKISTS</li>
-                        <li>WHOLESALE</li>
-                        <li>CONTACT</li>
-                    </ul>
-                </nav>
-                <a class="source" href="#">
-                    <img src="images/sorse.svg" alt="source" loading="lazy">
-                </a>
-            </article>
-        </div>
-    </header>
-<section class="banner">
+<header>
     <div class="container">
-        <article class="article_banner">
-            <h4>Good4Me</h4>
-            <h1>Apple Cider Vinegar</h1>
-            <p>Good4Me Apple Cider Vinegar gummies are the newest addition to your morning health and well-being regime. </p>
-            <a class="shop_now" href="#">Shop Now</a>
+        <article class="pre_header">
+            <p class="p_pre_header">
+                Afterpay, Laybuy & Genoapay | Free Delivery New Zealand + Australia*
+            </p>
+            <div>
+                <a href="#">Sign In /</a>
+                <a class="register" href="#">Register</a>
+                <p class="value">USD</p>
+            </div>
         </article>
-        <img src="images/banner_bottom.png" alt="banner_bottom">
+        <article class="main_header">
+            <a class="logo" href="#">
+                <img src="images/Logo.svg" alt="logo" loading="lazy">
+            </a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">HOME</a></li>
+                    <li>
+                        <a href="#"> SHOP</a></li>
+                    <li>
+                        <a href="#">FAQ'S</a></li>
+                    <li>
+                        <a href="#">STOCKISTS</a></li>
+                    <li>
+                        <a href="#">WHOLESALE</a></li>
+                    <li>
+                        <a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" data-js="menu-toggle">
+                <span class="menu-toggle-grippy">Toggle</span>
+                <span class="menu-toggle-label">Menu</span>
+            </div>
+            <a class="source" href="#">
+                <img src="images/sorse.svg" alt="source" loading="lazy">
+            </a>
+        </article>
     </div>
-</section>
-<section class="deal">
-    <div class="container">
-        <h3>GOOD4ME DEAL</h3>
-        <p class="orange_band"></p>
-        <p>Pick your beauty products today. 50% OFF on the most popular GOOD4ME. <br>Order all classy products today!</p>
-        <div class="deal_BAD">
-            <ul>
-                <li>
-                <img width="397" height="410" src="images/deal_1.jpg" alt="deal_1" loading="lazy"><a href="#">MULTI-VITAMIN: EVERYDAY WELLNESS</a>
-                </li>
-                <li>
-                    <img width="395" height="408" src="images/deal_2.jpg" alt="deal_2" loading="lazy"><a href="#" >FULL RANGE VALUE PACK (SAVE 33%)</a>
-                </li>
-                <li>
-                    <img width="397" height="410" src="images/deal_3.jpg" alt="deal_3" loading="lazy"><a href="#">VITAMIN C: IMMUNITY SUPPORT </a>
-                </li>
-                <li>
-                    <img width="395" height="408" src="images/deal_4.jpg" alt="deal_4" loading="lazy"><a href="#">IRON: ENERGY SUPPORT</a>
-                </li>
-            </ul>
-        </div>
-        <div class="payment">
-            <article>
-                <img width="79" height="73" src="images/payment_1.svg" alt="payment_1" loading="lazy">
-                <h4>WORLDWIDE SHIPPING</h4>
-                <p>Lorem ipsum dolor sit amet, consectetuer
-                    adipiscing elit. Aenean</p>
-            </article>
-            <article>
-                <img width="83" height="73" src="images/payment_2.svg" alt="payment_2" loading="lazy">
-                <h4>30 DAYS GUARANTEE</h4>
-                <p>Lorem ipsum dolor sit amet, consectetuer
-                    adipiscing elit. Aenean</p>
-            </article>
-            <article>
-                <img width="66" height="73" src="images/payment_3.svg" alt="payment_3" loading="lazy">
-                <h4>SECURED PAYMENTS</h4>
-                <p>Lorem ipsum dolor sit amet, consectetuer
-                    adipiscing elit. Aenean</p>
-            </article>
+</header>
+<main>
+    <div class="hidden-panel">
+
+        <span class="hidden-panel-close" data-js="hidden-panel-close">Close</span>
+
+        <div class="hidden-panel-content">
+
+            <nav class="hidden-panel-nav">
+                <h3>Quick Look</h3>
+                <ul>
+                    <li><a href="#" title="Home">Home</a></li>
+                    <li><a href="#" title="About">About</a></li>
+                    <li><a href="#" title="Blog">Blog</a></li>
+                    <li><a href="#" title="Work">Work</a></li>
+                    <li><a href="#" title="Contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </div>
-</section>
-<section class="health">
+    <section class="banner">
+        <div class="container">
+            <article class="article_banner">
+                <h4>Good4Me</h4>
+                <h1>Apple Cider Vinegar</h1>
+                <p>Good4Me Apple Cider Vinegar gummies are the newest addition to your morning health and well-being regime. </p>
+                <a class="shop_now" href="#">Shop Now</a>
+            </article>
+            <img src="images/banner_bottom.png" alt="banner_bottom">
+        </div>
+    </section>
+    <section class="deal">
+        <div class="container">
+            <h3>GOOD4ME DEAL</h3>
+            <p class="orange_band"></p>
+            <p>Pick your beauty products today. 50% OFF on the most popular GOOD4ME. <br>Order all classy products today!</p>
+            <div class="deal_BAD">
+                <ul>
+                    <li>
+                        <img width="397" height="410" src="images/deal_1.jpg" alt="deal_1" loading="lazy"><a href="#">MULTI-VITAMIN: EVERYDAY WELLNESS</a>
+                    </li>
+                    <li>
+                        <img width="395" height="408" src="images/deal_2.jpg" alt="deal_2" loading="lazy"><a href="#" >FULL RANGE VALUE PACK (SAVE 33%)</a>
+                    </li>
+                    <li>
+                        <img width="397" height="410" src="images/deal_3.jpg" alt="deal_3" loading="lazy"><a href="#">VITAMIN C: IMMUNITY SUPPORT </a>
+                    </li>
+                    <li>
+                        <img width="395" height="408" src="images/deal_4.jpg" alt="deal_4" loading="lazy"><a href="#">IRON: ENERGY SUPPORT</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="payment">
+                <article>
+                    <img width="79" height="73" src="images/payment_1.svg" alt="payment_1" loading="lazy">
+                    <h4>WORLDWIDE SHIPPING</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit. Aenean</p>
+                </article>
+                <article>
+                    <img width="83" height="73" src="images/payment_2.svg" alt="payment_2" loading="lazy">
+                    <h4>30 DAYS GUARANTEE</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit. Aenean</p>
+                </article>
+                <article>
+                    <img width="66" height="73" src="images/payment_3.svg" alt="payment_3" loading="lazy">
+                    <h4>SECURED PAYMENTS</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit. Aenean</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="health">
+        <div class="container">
+            <article>
+                <h2>TAKE CONTROL OF YOUR HEALTH</h2>
+                <p>The Good4Me range has been formulated based on scientific & traditional evidence.<br> Our vitamins are here and ready to boost your mood, immunity and overall well-being!<br>Made in New Zealand from local and imported ingredients.</p>
+                <a href="#">BROWSE OUR RANGE</a>
+            </article>
+            <article class="two_images">
+                <img width="432" height="329" src="images/health_1.jpg" alt="health_1" loading="lazy">
+                <img width="432" height="319" src="images/health_2.jpg" alt="health_2" loading="lazy">
+            </article>
+            <article class="one_images">
+                <img width="490" height="678" src="images/health_3.jpg" alt="health_3" loading="lazy">
+            </article>
+        </div>
+    </section>
+    <section class="product">
+        <div class="container">
+            <h3>
+                OUR PRODUCTS ARE
+            </h3>
+            <div class="product_article">
+                <article>
+                    <img width="395" height="408" src="images/product_1.jpg" alt="product_1" loading="lazy">
+                    <a href="#">
+                        MULTI-VITAMIN (3 MONTH SUPPLY)
+                    </a>
+                    <p>$39.95 NZD<span>$199.75 NZD</span></p>
+                </article>
+                <article>
+                    <img width="397" height="410" src="images/deal_3.jpg" alt="product_2" loading="lazy">
+                    <a href="#">
+                        VITAMIN C: IMMUNITY SUPPORT
+                    </a>
+                    <p>$39.95 NZD<span>$199.75 NZD</span></p>
+                </article>
+                <article>
+                    <img width="397" height="410" src="images/product-4.jpg" alt="product_4" loading="lazy">
+                    <a href="#">
+                        APPLE CIDER VINEGAR (3 MONTH SUPPLY)
+                    </a>
+                    <p>$94.95 NZD  <span>$199.75 NZD</span></p>
+                </article>
+            </div>
+            <a class="all_product" href="#">VIEW ALL PRODUCTS</a>
+        </div>
+    </section>
+    <section class="reviews">
+        <div class="container">
+            <img class="crop1" src="images/banner_bottom.png" alt="banner_bottom">
+            <article>
+                <h4>
+                    REAL REVIEWS
+                </h4>
+                <h3>
+                    REAL RESULTS
+                </h3>
+                <img width="96" height="16" src="images/stars.svg" alt="stars" loading="lazy">
+                <p>
+                    “We have perfected our formulas over time, based on your feedback. Check out hundreds of reviews on our website.We can't wait until you are a part of our Good4Me Family.”
+                </p>
+                <span>_Chloe H.</span>
+                <ul>
+                    <li>
+                        <a href="#"><img src=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src=""></a>
+                    </li>
+                </ul>
+            </article>
+            <img width="534" height="534" src="images/reviews.jpg" alt="reviews" loading="lazy">
+            <img class="crop2" src="images/banner_bottom.png" alt="banner_bottom">
+        </div>
+    </section>
+    <section class="shop_all">
+        <div class="container">
+            <h4>SHOP ALL</h4>
+            <article class="shop_all_article">
+                <ul>
+                    <li>
+                        <img width="397" height="410" src="images/shop_all_1.jpg" alt="shop_all_1" loading="lazy" >
+                        <a href="#"> **PRE-ORDER** HAIR, SKIN & NAILS (5 MONTH SUPPLY) </a>
+                        <p>$39.95 NZD<span>$199.75 NZD</span></p>
+                    </li>
+                    <li>
+                        <img width="397" height="410" src="images/shop_all_2.jpg" alt="shop_all_2" loading="lazy" >
+                        <a href="#">DETOX + BLOAT SUPPORT VALUE PACK </a>
+                        <p>$39.95 NZD<span>$199.75 NZD</span></p>
+                    </li>
+                    <li>
+                        <img width="397" height="410" src="images/shop_all_3.jpg" alt="shop_all_3" loading="lazy" >
+                        <a href="#">PROBIOTICS: GUT HEALTH + BLOAT SUPPORT </a>
+                        <p>$39.95 NZD<span>$199.75 NZD</span></p>
+                    </li>
+                    <li>
+                        <img width="397" height="410" src="images/shop_all_4.jpg" alt="shop_all_4" loading="lazy" >
+                        <a href="#">APPLE CIDER VINEGAR </a>
+                        <p>$94.95 NZD<span>$199.75 NZD</span></p>
+                    </li>
+                </ul>
+            </article>
+            <a class="all_product" href="#">VIEW ALL PRODUCTS</a>
+        </div>
+    </section>
+    <section class="news">
+        <div class="container">
+            <h4>
+                LATEST NEWS
+            </h4>
+            <div class="news_article">
+                <article>
+                    <img width="408" height="293" src="images/news_1.jpg" alt="news_1" loading="lazy">
+                    <p class="date">
+                        August 26, 2020
+                    </p>
+                    <h5>
+                        WE DONATE ONE WEEKS SUPPLY
+                    </h5>
+                    <p >
+                        We care about New Zealand children, and we want to support our community by providing our children in need with necessary vitamins to improve....
+                    </p>
+                    <a href="#">Read more</a>
+                </article>
+                <article>
+                    <img width="408" height="293" src="images/news_2.jpg" alt="news_2" loading="lazy">
+                    <p class="date">
+                        August 26, 2020
+                    </p>
+                    <h5>
+                        WE DONATE ONE WEEKS SUPPLY
+                    </h5>
+                    <p>
+                        We care about New Zealand children, and we want to support our community by providing our children in need with necessary vitamins to improve....
+                    </p>
+                    <a href="#">Read more</a>
+                </article>
+                <article>
+                    <img width="408" height="293" src="images/news_3.jpg" alt="news_3" loading="lazy">
+                    <p class="date">
+                        August 26, 2020
+                    </p>
+                    <h5>
+                        WE DONATE ONE WEEKS SUPPLY
+                    </h5>
+                    <p>
+                        We care about New Zealand children, and we want to support our community by providing our children in need with necessary vitamins to improve....
+                    </p>
+                    <a href="#">Read more</a>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="pre_footer">
+        <div class="container">
+            <h4>#GOOD4ME</h4>
+            <article>
+                <img width="318" height="318" src="images/pre_footer_1.jpg" alt="foto_1" loading="lazy">
+                <img width="318" height="318" src="images/pre_footer_2.jpg" alt="foto_2" loading="lazy">
+                <img width="318" height="318" src="images/pre_footer_3.jpg" alt="foto_3" loading="lazy">
+                <img width="318" height="318" src="images/pre_footer_4.jpg" alt="foto_4" loading="lazy">
+                <img width="318" height="318" src="images/pre_footer_5.jpg" alt="foto_5" loading="lazy">
+                <img width="318" height="318" src="images/pre_footer_6.jpg" alt="foto_6" loading="lazy">
+            </article>
+        </div>
+    </section>
+</main>
+<footer>
     <div class="container">
         <article>
-            <h2>TAKE CONTROL OF YOUR HEALTH</h2>
-            <p>The Good4Me range has been formulated based on scientific & traditional evidence.<br> Our vitamins are here and ready to boost your mood, immunity and overall well-being!<br>Made in New Zealand from local and imported ingredients.</p>
-            <a href="#">BROWSE OUR RANGE</a>
-        </article>
-        <article class="two_images">
-            <img width="432" height="329" src="images/health_1.jpg" alt="health_1" loading="lazy">
-            <img width="432" height="319" src="images/health_2.jpg" alt="health_2" loading="lazy">
-        </article>
-        <article class="one_images">
-            <img width="490" height="678" src="images/health_3.jpg" alt="health_3" loading="lazy">
+            <img src="images/Logo.svg" alt="logo" loading="lazy">
+            <p>Good health is important, so all of our products have been carefully designed to bring out the best in you.</p>
         </article>
     </div>
-</section>
-<section class="product">
-    <div class="container">
-        <h3>
-            OUR PRODUCTS ARE
-        </h3>
-        <div class="product_article">
-            <article>
-                <img width="395" height="408" src="images/product_1.jpg" alt="product_1" loading="lazy">
-                <a href="#">
-                    MULTI-VITAMIN (3 MONTH SUPPLY)
-                </a>
-                <p>$39.95 NZD </p>
-                <span>$199.75 NZD</span>
-            </article>
-            <article>
-                <img width="397" height="410" src="images/deal_3.jpg" alt="product_2" loading="lazy">
-                <a href="#">
-                    VITAMIN C: IMMUNITY SUPPORT
-                </a>
-                <p>$39.95 NZD </p>
-                <span>$199.75 NZD</span>
-            </article>
-            <article>
-                <img width="397" height="410" src="images/deal_1.jpg" alt="product_3" loading="lazy">
-                <a href="#">
-                    MULTI-VITAMIN (3 MONTH SUPPLY)
-                </a>
-                <p>$39.95 NZD </p>
-                <span>$199.75 NZD</span>
-            </article>
-            <article>
-                <img width="397" height="410" src="images/product-4.jpg" alt="product_4" loading="lazy">
-                <a href="#">
-                    APPLE CIDER VINEGAR (3 MONTH SUPPLY)
-                </a>
-                <p>$94.95 NZD </p>
-                <span>$199.75 NZD</span>
-            </article>
-        </div>
-        <a href="#">VIEW ALL PRODUCTS</a>
-    </div>
-</section>
+</footer>
+
+<script src="js/scripts.js"></script>
 </body>
 </html>
