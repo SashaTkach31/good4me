@@ -48,6 +48,8 @@ a {
       color: #FFFFFF;
       text-decoration: none;
       padding-left: 6px; }
+      .pre_header div a:hover {
+        font-weight: 600; }
     .pre_header div .register {
       padding-right: 10px; }
       .pre_header div .register:after {
@@ -90,7 +92,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  margin-right: 20px; }
   .main_header .logo {
     margin-left: 20px; }
   .main_header nav ul {
@@ -516,6 +519,124 @@ a {
   .pre_footer .container article {
     display: flex;
     gap: 30px;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 100px; }
+
+footer .container {
+  background-color: #fff8f6;
+  position: relative; }
+  footer .container .crop1 {
+    position: absolute;
+    transform: rotate(180deg);
+    top: 0;
+    width: 100%; }
+  footer .container .footer_article {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+    margin-bottom: 50px; }
+    footer .container .footer_article .footer_logo {
+      max-width: 300px;
+      text-align: center; }
+      footer .container .footer_article .footer_logo img {
+        margin-bottom: 10px; }
+      footer .container .footer_article .footer_logo p {
+        font-family: "Jost", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 162%;
+        text-align: center;
+        color: #454545; }
+    footer .container .footer_article .footer_form {
+      max-width: 350px;
+      text-align: center; }
+      footer .container .footer_article .footer_form h4 {
+        font-family: "Jost", sans-serif;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 100%;
+        color: #000000;
+        margin-bottom: 11px; }
+      footer .container .footer_article .footer_form p {
+        font-family: "Jost", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 162%;
+        text-align: center;
+        color: #454545;
+        margin-bottom: 32px; }
+      footer .container .footer_article .footer_form .footer_input {
+        border-bottom: 2px solid #000000;
+        width: 365px;
+        display: inline-flex;
+        justify-content: space-between; }
+        footer .container .footer_article .footer_form .footer_input input {
+          font-family: "Jost", sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 162%;
+          text-align: center;
+          color: #000000;
+          border: none;
+          background-color: #fff8f6; }
+        footer .container .footer_article .footer_form .footer_input button {
+          font-family: "Jost", sans-serif;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 162%;
+          text-transform: uppercase;
+          text-align: center;
+          color: #f6623e;
+          border: none;
+          background-color: #fff8f6; }
+          footer .container .footer_article .footer_form .footer_input button:hover {
+            font-weight: 800; }
+    footer .container .footer_article .footer_ul h4 {
+      font-family: "Jost", sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 130%;
+      color: #000000;
+      margin-bottom: 13px; }
+    footer .container .footer_article .footer_ul ul li a {
+      font-family: "Jost", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 222%;
+      color: #454545;
+      text-decoration: none; }
+      footer .container .footer_article .footer_ul ul li a:hover {
+        color: #f6623e; }
+  footer .container .copyright {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #9d9d9d;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center; }
+    footer .container .copyright .social_media {
+      padding-top: 20px; }
+      footer .container .copyright .social_media ul {
+        display: flex;
+        gap: 15px;
+        margin-left: 30px; }
+    footer .container .copyright p {
+      font-family: "Jost", sans-serif;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 162%;
+      text-align: center;
+      color: #000000; }
+      footer .container .copyright p a {
+        color: #f6623e;
+        font-family: "Jost", sans-serif;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 13px; }
+    footer .container .copyright .pay {
+      width: 25%;
+      margin-right: 20px; }
 
 /*# sourceMappingURL=style.css.map */
