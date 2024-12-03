@@ -269,7 +269,7 @@ a {
         text-align: center;
         color: #454545; }
 
-/*__________________________________________________health______________________________________________________*/
+/*_______________________________health_____________________________*/
 .health {
   background: #fff8f6; }
   .health .container {
@@ -290,6 +290,9 @@ a {
           margin-bottom: 20px;
           padding-top: 20px;
           padding-left: 115px; } }
+      @media screen and (max-width: 500px) {
+        .health .container .health_article {
+          padding-left: 0; } }
       .health .container .health_article h2 {
         font-family: "Jost", sans-serif;
         font-weight: 600;
@@ -341,7 +344,7 @@ a {
           width: 100%; }
 
 /*
-!*____________________________________________*!@product______________________________________________________*/
+!*_____________________*!@product___________________________________*/
 .product .container {
   text-align: center; }
   .product .container h3 {
@@ -405,7 +408,7 @@ a {
       background-color: #f6623e;
       color: #FFFFFF; }
 
-/*_________________________________________________________________reviews________________________________________________*/
+/*_________________________reviews___________________________________*/
 .reviews {
   background-image: url("../images/reviews_background.jpg"); }
   .reviews .container {
@@ -415,7 +418,8 @@ a {
     margin-bottom: 82px; }
     @media screen and (max-width: 889px) {
       .reviews .container {
-        flex-wrap: wrap; } }
+        flex-wrap: wrap;
+        margin-bottom: 170px; } }
     .reviews .container article {
       padding-left: 50px;
       max-width: 600px; }
@@ -459,6 +463,7 @@ a {
         letter-spacing: 0.06em;
         color: #f6623e; }
 
+/*_______________________shop_all____________________________________*/
 .shop_all .container {
   text-align: center; }
   .shop_all .container h4 {
@@ -520,6 +525,8 @@ a {
       background-color: #f6623e;
       color: #FFFFFF; }
 
+/*
+______________________________news_______________________________*/
 .news .container {
   text-align: center; }
   .news .container h4 {
@@ -589,6 +596,7 @@ a {
     justify-content: center;
     margin-bottom: 100px; }
 
+/*______________________________footer_____________________________*/
 footer {
   background-image: url("../images/footer.jpg");
   background-repeat: no-repeat;
@@ -601,7 +609,8 @@ footer {
     margin-bottom: 50px; }
     @media screen and (max-width: 899px) {
       footer .container .footer_article {
-        flex-wrap: wrap; } }
+        flex-wrap: wrap;
+        gap: 40px; } }
     footer .container .footer_article .footer_logo {
       max-width: 300px;
       text-align: center; }
@@ -681,6 +690,11 @@ footer {
     padding-top: 10px;
     padding-bottom: 10px;
     align-items: center; }
+    @media screen and (max-width: 600px) {
+      footer .container .copyright {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px; } }
     footer .container .copyright .social_media {
       padding-top: 20px; }
       footer .container .copyright .social_media ul {

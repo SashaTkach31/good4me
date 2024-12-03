@@ -342,7 +342,7 @@ margin-right: 20px;
     }
   }
 }
-/*__________________________________________________health______________________________________________________*/
+/*_______________________________health_____________________________*/
 .health{
   background: #fff8f6;
   .container{
@@ -362,6 +362,9 @@ margin-right: 20px;
         margin-bottom: 20px;
         padding-top: 20px;
         padding-left: 115px;
+      }
+      @include max-screen(500px){
+        padding-left: 0;
       }
       h2{
         font-family: $font_family;
@@ -425,7 +428,7 @@ margin-right: 20px;
   }
 }
 /*
-!*____________________________________________*!@product______________________________________________________*/
+!*_____________________*!@product___________________________________*/
 .product{
   .container{
     text-align: center;
@@ -502,7 +505,7 @@ margin-right: 20px;
     }
   }
 }
-/*_________________________________________________________________reviews________________________________________________*/
+/*_________________________reviews___________________________________*/
 .reviews{
   background-image: url("../images/reviews_background.jpg");
   .container{
@@ -512,6 +515,7 @@ margin-right: 20px;
     margin-bottom: 82px;
     @include max-screen(889px){
     flex-wrap: wrap;
+      margin-bottom: 170px;
     }
     article{
       padding-left: 50px;
@@ -563,6 +567,7 @@ margin-right: 20px;
     }
   }
 }
+/*_______________________shop_all____________________________________*/
 .shop_all{
   .container{
     text-align: center;
@@ -638,6 +643,8 @@ margin-right: 20px;
     }
   }
 }
+/*
+______________________________news_______________________________*/
 .news{
   .container{
     text-align: center;
@@ -723,6 +730,7 @@ margin-right: 20px;
     }
   }
 }
+/*______________________________footer_____________________________*/
 footer{
   background-image: url("../images/footer.jpg");
   background-repeat: no-repeat;
@@ -736,6 +744,7 @@ footer{
       margin-bottom: 50px;
       @include max-screen(899px){
         flex-wrap: wrap;
+        gap: 40px;
       }
       .footer_logo{
         max-width: 300px;
@@ -836,6 +845,11 @@ footer{
       padding-top: 10px;
       padding-bottom: 10px;
       align-items: center;
+      @include max-screen(600px){
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
       .social_media{
         padding-top: 20px;
         ul{
