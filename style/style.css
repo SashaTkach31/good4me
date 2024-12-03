@@ -11,7 +11,7 @@ a {
   max-width: 1200px;
   margin: auto; }
 
-.orange_button, .banner .container .article_banner .shop_now, .news .container .news_article article a {
+.orange_button, .banner .container .owl_carousel_div .article_banner .shop_now, .news .container .news_article article a {
   font-family: "Jost", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -24,69 +24,78 @@ a {
 
 /*___________________________________________________________header_______________________________________________*/
 .pre_header {
-  background-color: #f6623e;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px; }
-  .pre_header .p_pre_header {
-    font-family: "Jost", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 125%;
-    color: #FFFFFF;
-    padding-top: 15px;
-    padding-left: 30px;
-    padding-bottom: 15px; }
-  .pre_header div {
+  background-color: #f6623e; }
+  .pre_header .container {
     display: flex;
-    padding-top: 15px; }
-    .pre_header div a {
+    justify-content: space-between;
+    margin-bottom: 15px; }
+    .pre_header .container .p_pre_header {
       font-family: "Jost", sans-serif;
       font-weight: 400;
       font-size: 14px;
       line-height: 125%;
       color: #FFFFFF;
-      text-decoration: none;
-      padding-left: 6px; }
-      .pre_header div a:hover {
-        font-weight: 600; }
-    .pre_header div .register {
-      padding-right: 10px; }
-      .pre_header div .register:after {
-        border: 1px solid var(--ffffff);
-        width: 27px;
-        height: 0;
-        position: absolute;
-        transform: rotate(-90deg);
-        opacity: 0.3;
-        padding-left: 20px; }
-    .pre_header div:hover {
-      font-weight: bolder; }
-    .pre_header div .value {
-      align-items: center;
+      padding-top: 15px;
+      padding-left: 30px;
+      padding-bottom: 15px; }
+      @media screen and (max-width: 480px) {
+        .pre_header .container .p_pre_header {
+          font-size: 11px;
+          padding-left: 10px; } }
+    .pre_header .container div {
       display: flex;
-      padding-right: 35px;
-      padding-bottom: 15px;
-      font-family: "Jost", sans-serif;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 125%;
-      color: #FFFFFF; }
-      .pre_header div .value:before {
-        display: inline-block;
-        content: "";
-        width: 24px;
-        height: 16px;
-        background-image: url("../images/USD.svg");
-        margin-left: 30px;
-        margin-right: 5px; }
-      .pre_header div .value:after {
-        display: inline-block;
-        content: "";
-        width: 8px;
-        height: 4px;
-        margin-left: 5px;
-        background-image: url("../images/arrow.svg"); }
+      padding-top: 15px; }
+      .pre_header .container div a {
+        font-family: "Jost", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 125%;
+        color: #FFFFFF;
+        text-decoration: none;
+        padding-left: 6px; }
+        .pre_header .container div a:hover {
+          font-weight: 600; }
+      .pre_header .container div .register {
+        padding-right: 10px; }
+        .pre_header .container div .register:after {
+          border: 1px solid var(--ffffff);
+          width: 27px;
+          height: 0;
+          position: absolute;
+          transform: rotate(-90deg);
+          opacity: 0.3;
+          padding-left: 20px; }
+      .pre_header .container div:hover {
+        font-weight: bolder; }
+      .pre_header .container div .value {
+        align-items: center;
+        display: flex;
+        padding-right: 35px;
+        padding-bottom: 15px;
+        font-family: "Jost", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 125%;
+        color: #FFFFFF; }
+        @media screen and (max-width: 480px) {
+          .pre_header .container div .value {
+            padding-right: 20px;
+            font-size: 11px; } }
+        .pre_header .container div .value:before {
+          display: inline-block;
+          content: "";
+          width: 24px;
+          height: 16px;
+          background-image: url("../images/USD.svg");
+          margin-left: 30px;
+          margin-right: 5px; }
+        .pre_header .container div .value:after {
+          display: inline-block;
+          content: "";
+          width: 8px;
+          height: 4px;
+          margin-left: 5px;
+          background-image: url("../images/arrow.svg"); }
 
 .main_header {
   display: flex;
@@ -99,6 +108,9 @@ a {
   .main_header nav ul {
     display: flex;
     gap: 30px; }
+    @media screen and (max-width: 849px) {
+      .main_header nav ul {
+        display: block; } }
     .main_header nav ul li a {
       font-family: "Jost", sans-serif;
       font-weight: 400;
@@ -108,55 +120,64 @@ a {
       text-decoration: none; }
       .main_header nav ul li a:hover {
         color: #f6623e; }
+        @media screen and (max-width: 849px) {
+          .main_header nav ul li a:hover {
+            color: #FFFFFF;
+            font-weight: bolder; } }
+      @media screen and (max-width: 849px) {
+        .main_header nav ul li a {
+          color: #FFFFFF; } }
   @media screen and (max-width: 850px) {
     .main_header nav {
       display: none; } }
+  @media screen and (max-width: 599px) {
+    .main_header nav {
+      display: block; } }
   .main_header nav .source {
     margin-right: 20px; }
 
 /*__________________________________________________________banner________________________________________________*/
-.banner .container {
-  content: "";
-  height: 641px;
+.banner {
   background-image: url("../images/banner.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  margin-bottom: 60px; }
-  .banner .container .article_banner {
-    position: absolute;
-    max-width: 450px;
-    left: 650px;
-    top: 160px; }
-    .banner .container .article_banner h4 {
-      font-family: "Jost", sans-serif;
-      font-weight: 600;
-      font-size: 20px;
-      line-height: 162%;
-      color: #f6623e; }
-    .banner .container .article_banner h1 {
-      font-family: "Jost", sans-serif;
-      font-weight: 600;
-      font-size: 45px;
-      line-height: 129%;
-      color: #000000;
-      margin-bottom: 15px; }
-    .banner .container .article_banner p {
-      font-family: "Jost", sans-serif;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 181%;
-      color: #454545;
-      margin-bottom: 35px; }
-    .banner .container .article_banner .shop_now {
-      animation: pulse_shop_now infinite 1s; }
-      .banner .container .article_banner .shop_now:hover {
-        font-weight: bolder; }
-  .banner .container img {
-    position: relative;
-    top: 580px;
-    max-width: 100%; }
-
+  background-size: cover; }
+  .banner .container {
+    height: 641px;
+    margin-bottom: 60px; }
+    .banner .container .owl_carousel_div {
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 100px; }
+      @media screen and (max-width: 800px) {
+        .banner .container .owl_carousel_div {
+          justify-content: flex-start;
+          padding-left: 20px; } }
+      .banner .container .owl_carousel_div .article_banner {
+        max-width: 450px; }
+        .banner .container .owl_carousel_div .article_banner h4 {
+          font-family: "Jost", sans-serif;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 162%;
+          color: #f6623e; }
+        .banner .container .owl_carousel_div .article_banner h1 {
+          font-family: "Jost", sans-serif;
+          font-weight: 600;
+          font-size: 45px;
+          line-height: 129%;
+          color: #000000;
+          margin-bottom: 15px; }
+        .banner .container .owl_carousel_div .article_banner p {
+          font-family: "Jost", sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 181%;
+          color: #454545;
+          margin-bottom: 35px; }
+        .banner .container .owl_carousel_div .article_banner .shop_now {
+          animation: pulse_shop_now infinite 1s; }
+          .banner .container .owl_carousel_div .article_banner .shop_now:hover {
+            font-weight: bolder; }
 @keyframes pulse_shop_now {
   0% {
     -webkit-transform: scale(1.3);
@@ -166,6 +187,17 @@ a {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1); } }
+.owl-dots {
+  text-align: end;
+  margin-right: 200px; }
+  .owl-dots .owl-dot span {
+    height: 10px;
+    width: 10px;
+    background-color: #f6623e;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 50%; }
+
 /*_____________________________________________________deal_____________________________________________________*/
 .deal .container {
   text-align: center; }
@@ -215,6 +247,9 @@ a {
     justify-content: center;
     gap: 100px;
     margin-bottom: 100px; }
+    @media screen and (max-width: 560px) {
+      .deal .container .payment {
+        flex-wrap: wrap; } }
     .deal .container .payment article {
       max-width: 170px; }
       .deal .container .payment article img {
@@ -235,53 +270,75 @@ a {
         color: #454545; }
 
 /*__________________________________________________health______________________________________________________*/
-.health .container {
-  background: #fff8f6;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  margin-bottom: 136px; }
-  .health .container article {
-    text-align: left;
-    max-width: 250px;
-    padding-left: 10px; }
-    .health .container article h2 {
-      font-family: "Jost", sans-serif;
-      font-weight: 600;
-      font-size: 30px;
-      line-height: 144%;
-      letter-spacing: 0.06em;
-      color: #000000;
-      margin-bottom: 35px; }
-    .health .container article p {
-      font-family: "Jost", sans-serif;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 175%;
-      color: #454545;
-      margin-bottom: 34px; }
-    .health .container article a {
-      border: 2px solid #f6623e;
-      font-family: "Jost", sans-serif;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 156%;
-      text-align: center;
-      color: #000000;
-      text-decoration: none;
-      padding: 10px 31px 7px 34px;
-      transition: background-color 0.6s ease, color 0.4s ease; }
-      .health .container article a:hover {
-        background-color: #f6623e;
-        color: #FFFFFF; }
-  .health .container .two_images {
-    max-width: 440px; }
-    .health .container .two_images img:first-of-type {
-      margin-bottom: 15px; }
-  .health .container .one_images {
-    max-width: 470px; }
-    .health .container .one_images img {
-      width: 100%; }
+.health {
+  background: #fff8f6; }
+  .health .container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 136px; }
+    @media screen and (max-width: 1175px) {
+      .health .container {
+        flex-wrap: wrap; } }
+    .health .container .health_article {
+      text-align: left;
+      max-width: 250px;
+      padding-left: 10px; }
+      @media screen and (max-width: 1175px) {
+        .health .container .health_article {
+          max-width: max-content;
+          margin-bottom: 20px;
+          padding-top: 20px;
+          padding-left: 115px; } }
+      .health .container .health_article h2 {
+        font-family: "Jost", sans-serif;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 144%;
+        letter-spacing: 0.06em;
+        color: #000000;
+        margin-bottom: 35px; }
+      .health .container .health_article p {
+        font-family: "Jost", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 175%;
+        color: #454545;
+        margin-bottom: 34px; }
+      .health .container .health_article a {
+        border: 2px solid #f6623e;
+        font-family: "Jost", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 156%;
+        text-align: center;
+        color: #000000;
+        text-decoration: none;
+        padding: 10px 31px 7px 34px;
+        transition: background-color 0.6s ease, color 0.4s ease; }
+        .health .container .health_article a:hover {
+          background-color: #f6623e;
+          color: #FFFFFF; }
+    .health .container .health_images {
+      display: flex; }
+      @media screen and (max-width: 1175px) {
+        .health .container .health_images {
+          justify-content: center;
+          gap: 10px; } }
+      @media screen and (max-width: 889px) {
+        .health .container .health_images {
+          flex-wrap: wrap; } }
+      .health .container .health_images .two_images {
+        max-width: 440px; }
+        .health .container .health_images .two_images img:first-of-type {
+          margin-bottom: 15px; }
+        @media screen and (max-width: 1150px) {
+          .health .container .health_images .two_images {
+            margin-bottom: 10px; } }
+      .health .container .health_images .one_images {
+        max-width: 470px; }
+        .health .container .health_images .one_images img {
+          width: 100%; }
 
 /*
 !*____________________________________________*!@product______________________________________________________*/
@@ -299,6 +356,12 @@ a {
     justify-content: center;
     gap: 7px;
     margin-bottom: 60px; }
+    @media screen and (max-width: 1190px) {
+      .product .container .product_article {
+        flex-wrap: wrap;
+        gap: 30px; } }
+    .product .container .product_article article {
+      max-width: 397px; }
     .product .container .product_article img {
       margin-bottom: 23px; }
     .product .container .product_article a {
@@ -342,60 +405,59 @@ a {
       background-color: #f6623e;
       color: #FFFFFF; }
 
-.reviews .container {
-  display: flex;
-  background-color: #fef0e7;
-  position: relative;
-  height: 700px;
-  align-items: center;
-  margin-bottom: 82px; }
-  .reviews .container article {
-    padding-left: 50px;
-    max-width: 600px; }
-    .reviews .container article h4 {
-      font-family: "Jost", sans-serif;
-      font-weight: 500;
-      font-size: 17px;
-      line-height: 125%;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: #000000;
-      margin-bottom: 46px; }
-    .reviews .container article h3 {
-      font-family: "Jost", sans-serif;
-      font-weight: 500;
-      font-size: 25px;
-      line-height: 83%;
-      letter-spacing: 0.13em;
-      text-transform: uppercase;
-      color: #f6623e;
-      margin-bottom: 24px; }
-    .reviews .container article img {
-      margin-bottom: 24px; }
-    .reviews .container article p {
-      font-family: "Jost", sans-serif;
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 169%;
-      letter-spacing: 0.04em;
-      color: #454545;
-      margin-bottom: 20px; }
-    .reviews .container article span {
-      font-family: "Jost", sans-serif;
-      font-weight: 600;
-      font-size: 12px;
-      line-height: 125%;
-      letter-spacing: 0.06em;
-      color: #f6623e; }
-  .reviews .container .crop1 {
-    position: absolute;
-    transform: rotate(180deg);
-    top: 0;
-    width: 100%; }
-  .reviews .container .crop2 {
-    position: absolute;
-    bottom: 0;
-    width: 100%; }
+/*_________________________________________________________________reviews________________________________________________*/
+.reviews {
+  background-image: url("../images/reviews_background.jpg"); }
+  .reviews .container {
+    display: flex;
+    height: 910px;
+    align-items: center;
+    margin-bottom: 82px; }
+    @media screen and (max-width: 889px) {
+      .reviews .container {
+        flex-wrap: wrap; } }
+    .reviews .container article {
+      padding-left: 50px;
+      max-width: 600px; }
+      @media screen and (max-width: 889px) {
+        .reviews .container article {
+          margin-bottom: 30px;
+          padding-top: 150px; } }
+      .reviews .container article h4 {
+        font-family: "Jost", sans-serif;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 125%;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 46px; }
+      .reviews .container article h3 {
+        font-family: "Jost", sans-serif;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 83%;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+        color: #f6623e;
+        margin-bottom: 24px; }
+      .reviews .container article img {
+        margin-bottom: 24px; }
+      .reviews .container article p {
+        font-family: "Jost", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 169%;
+        letter-spacing: 0.04em;
+        color: #454545;
+        margin-bottom: 20px; }
+      .reviews .container article span {
+        font-family: "Jost", sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 125%;
+        letter-spacing: 0.06em;
+        color: #f6623e; }
 
 .shop_all .container {
   text-align: center; }
@@ -470,6 +532,10 @@ a {
   .news .container .news_article {
     display: flex;
     gap: 10px; }
+    @media screen and (max-width: 1150px) {
+      .news .container .news_article {
+        flex-wrap: wrap;
+        justify-content: center; } }
     .news .container .news_article article {
       max-width: 408px;
       text-align: center; }
@@ -523,20 +589,19 @@ a {
     justify-content: center;
     margin-bottom: 100px; }
 
-footer .container {
-  background-color: #fff8f6;
-  position: relative; }
-  footer .container .crop1 {
-    position: absolute;
-    transform: rotate(180deg);
-    top: 0;
-    width: 100%; }
+footer {
+  background-image: url("../images/footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
   footer .container .footer_article {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-top: 50px;
     margin-bottom: 50px; }
+    @media screen and (max-width: 899px) {
+      footer .container .footer_article {
+        flex-wrap: wrap; } }
     footer .container .footer_article .footer_logo {
       max-width: 300px;
       text-align: center; }

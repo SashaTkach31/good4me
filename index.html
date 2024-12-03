@@ -17,8 +17,8 @@
 </head>
 <body>
 <header>
-    <div class="container">
-        <article class="pre_header">
+    <article class="pre_header">
+     <div class="container">
             <p class="p_pre_header">
                 Afterpay, Laybuy & Genoapay | Free Delivery New Zealand + Australia*
             </p>
@@ -27,27 +27,38 @@
                 <a class="register" href="#">Register</a>
                 <p class="value">USD</p>
             </div>
-        </article>
+     </div>
+    </article>
+    <div class="container">
         <article class="main_header">
             <a class="logo" href="#">
                 <img src="images/Logo.svg" alt="logo" loading="lazy">
             </a>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">HOME</a></li>
-                    <li>
-                        <a href="#"> SHOP</a></li>
-                    <li>
-                        <a href="#">FAQ'S</a></li>
-                    <li>
-                        <a href="#">STOCKISTS</a></li>
-                    <li>
-                        <a href="#">WHOLESALE</a></li>
-                    <li>
-                        <a href="#">CONTACT</a></li>
-                </ul>
-            </nav>
+            <div class="hidden-panel">
+
+                <span class="hidden-panel-close" data-js="hidden-panel-close">Close</span>
+
+                <div class="hidden-panel-content">
+
+                    <nav class="hidden-panel-nav">
+                        <ul>
+                            <li>
+                                <a href="#">HOME</a></li>
+                            <li>
+                                <a href="#"> SHOP</a></li>
+                            <li>
+                                <a href="#">FAQ'S</a></li>
+                            <li>
+                                <a href="#">STOCKISTS</a></li>
+                            <li>
+                                <a href="#">WHOLESALE</a></li>
+                            <li>
+                                <a href="#">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
             <div class="menu-toggle" data-js="menu-toggle">
                 <span class="menu-toggle-grippy">Toggle</span>
                 <span class="menu-toggle-label">Menu</span>
@@ -59,43 +70,35 @@
     </div>
 </header>
 <main>
-    <div class="hidden-panel">
 
-        <span class="hidden-panel-close" data-js="hidden-panel-close">Close</span>
-
-        <div class="hidden-panel-content">
-
-            <nav class="hidden-panel-nav">
-                <h3>Quick Look</h3>
-                <ul>
-                    <li><a href="#" title="Home">Home</a></li>
-                    <li><a href="#" title="About">About</a></li>
-                    <li><a href="#" title="Blog">Blog</a></li>
-                    <li><a href="#" title="Work">Work</a></li>
-                    <li><a href="#" title="Contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
     <section class="banner">
         <div class="container">
-            <article>
-                <article class="article_banner">
-                    <h4>Good4Me</h4>
-                    <h1>Apple Cider Vinegar</h1>
-                    <p>Good4Me Apple Cider Vinegar gummies are the newest addition to your morning health and well-being regime. </p>
-                    <a class="shop_now" href="#">Shop Now</a>
-                </article>
-                <img src="images/banner_bottom.png" alt="banner_bottom">
-            </article>
             <div class="owl-carousel">
-                <div> Your Content </div>
-                <div> Your Content </div>
-                <div> Your Content </div>
-                <div> Your Content </div>
-                <div> Your Content </div>
-                <div> Your Content </div>
-                <div> Your Content </div>
+                <div class="owl_carousel_div">
+                    <article class="article_banner">
+                        <h4>Good4Me</h4>
+                        <h1>Apple Cider Vinegar</h1>
+                        <p>Good4Me Apple Cider Vinegar gummies are the newest addition to your morning health and well-being regime. </p>
+                        <a class="shop_now" href="#">Shop Now</a>
+                    </article>
+                </div>
+                <div class="owl_carousel_div">
+                    <article class="article_banner">
+                        <h4>Good4Me</h4>
+                        <h1>MULTI-VITAMIN
+                            (3 MONTH SUPPLY)</h1>
+                        <p>Good4Me Apple Cider Vinegar gummies are the newest addition to your morning health and well-being regime.  </p>
+                        <a class="shop_now" href="#">Shop Now</a>
+                    </article>
+                </div>
+                <div class="owl_carousel_div">
+                    <article class="article_banner">
+                        <h4>Good4Me</h4>
+                        <h1>TAKE CONTROL OF YOUR HEALTH</h1>
+                        <p>Good4Me Apple Cider Vinegar gummies are the newest addition to your morning health and well-being regime. </p>
+                        <a class="shop_now" href="#">Shop Now</a>
+                    </article>
+                </div>
             </div>
         </div>
     </section>
@@ -144,18 +147,21 @@
     </section>
     <section class="health">
         <div class="container">
-            <article>
+            <article class="health_article">
                 <h2>TAKE CONTROL OF YOUR HEALTH</h2>
                 <p>The Good4Me range has been formulated based on scientific & traditional evidence.<br> Our vitamins are here and ready to boost your mood, immunity and overall well-being!<br>Made in New Zealand from local and imported ingredients.</p>
                 <a href="#">BROWSE OUR RANGE</a>
             </article>
-            <article class="two_images">
-                <img width="432" height="329" src="images/health_1.jpg" alt="health_1" loading="lazy">
-                <img width="432" height="319" src="images/health_2.jpg" alt="health_2" loading="lazy">
+            <article class="health_images">
+                <article class="two_images">
+                    <img width="432" height="329" src="images/health_1.jpg" alt="health_1" loading="lazy">
+                    <img width="432" height="319" src="images/health_2.jpg" alt="health_2" loading="lazy">
+                </article>
+                <article class="one_images">
+                    <img width="490" height="678" src="images/health_3.jpg" alt="health_3" loading="lazy">
+                </article>
             </article>
-            <article class="one_images">
-                <img width="490" height="678" src="images/health_3.jpg" alt="health_3" loading="lazy">
-            </article>
+
         </div>
     </section>
     <section class="product">
@@ -191,7 +197,6 @@
     </section>
     <section class="reviews">
         <div class="container">
-            <img class="crop1" src="images/banner_bottom.png" alt="banner_bottom">
             <article>
                 <h4>
                     REAL REVIEWS
@@ -204,17 +209,8 @@
                     “We have perfected our formulas over time, based on your feedback. Check out hundreds of reviews on our website.We can't wait until you are a part of our Good4Me Family.”
                 </p>
                 <span>_Chloe H.</span>
-                <ul>
-                    <li>
-                        <a href="#"><img src=""></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src=""></a>
-                    </li>
-                </ul>
             </article>
             <img width="534" height="534" src="images/reviews.jpg" alt="reviews" loading="lazy">
-            <img class="crop2" src="images/banner_bottom.png" alt="banner_bottom">
         </div>
     </section>
     <section class="shop_all">
@@ -299,11 +295,11 @@
         <div class="container">
             <h4>#GOOD4ME</h4>
             <article>
-                <img width="318" height="318" src="images/pre_footer_1.jpg" alt="foto_1" loading="lazy">
+                <img width="249" height="318" src="images/pre_footer_1.jpg" alt="foto_1" loading="lazy">
                 <img width="318" height="318" src="images/pre_footer_2.jpg" alt="foto_2" loading="lazy">
                 <img width="318" height="318" src="images/pre_footer_3.jpg" alt="foto_3" loading="lazy">
                 <img width="318" height="318" src="images/pre_footer_4.jpg" alt="foto_4" loading="lazy">
-                <img width="318" height="318" src="images/pre_footer_5.jpg" alt="foto_5" loading="lazy">
+                <img width="249" height="318" src="images/pre_footer_5.jpg" alt="foto_5" loading="lazy">
                 <img width="318" height="318" src="images/pre_footer_6.jpg" alt="foto_6" loading="lazy">
             </article>
         </div>
@@ -311,7 +307,6 @@
 </main>
 <footer>
     <div class="container">
-        <img class="crop1" src="images/banner_bottom.png" alt="banner_bottom">
         <div class="footer_article">
             <article class="footer_logo">
                 <img src="images/Logo.svg" alt="logo" loading="lazy">
